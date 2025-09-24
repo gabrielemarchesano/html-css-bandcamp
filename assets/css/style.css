@@ -6,6 +6,10 @@
 
 :root {
   --band-top-height: 112px;
+  --band-primary-black: #222222;
+  --band-secondary-black: #2b2b2b;
+  --band-search-bg: #464646;
+  --band-filter-bg: #3c3c3c;
 }
 
 .debug {
@@ -92,6 +96,12 @@
 .nav {
   justify-content: space-between;
   padding: 0 10px;
+  background-color: var(--band-primary-black);
+}
+
+
+.nav-bottom {
+  background-color: var(--band-secondary-black);
 }
 
 .nav-left {
@@ -102,6 +112,10 @@
 .btns {
   align-items: center;
   gap: 10px;
+  
+  .btn {
+    color: white;
+  }
 }
 
 .bottom-nav {
@@ -111,7 +125,7 @@
 
 .container {
   flex-wrap: wrap;
-  
+
   .album-col {
     width: calc(100% / 4);
   }
