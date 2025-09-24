@@ -147,7 +147,7 @@ body {
   flex-wrap: wrap;
 
   .album-col {
-    width: calc((100% - 50px) / 4);
+    width: calc(100% / 4);
     padding: 10px;
   }
 }
@@ -155,7 +155,7 @@ body {
 .bottom {
   color: white;
   padding-top: 10px;
-  height: calc(100% - var(--band-top-height));
+  height: calc(100% - 103px);
 }
 
 
