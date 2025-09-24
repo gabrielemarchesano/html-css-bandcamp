@@ -44,6 +44,11 @@
       height: 40px;
       width: 300px;
     }
+
+    .bottom-nav {
+      background-color: firebrick;
+      height: 50%;
+    }
   }
 
   .bottom {
@@ -76,4 +81,9 @@
 .btns {
   align-items: center;
   gap: 10px;
+}
+
+.bottom-nav {
+  align-items: center;
+  padding: 0 10px;
 }
