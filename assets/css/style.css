@@ -9,7 +9,9 @@
 }
 
 .debug {
-  border: 1px dashed;
+  * {
+    border: 1px dashed;
+  }
 
   .top {
     height: var(--band-top-height);
@@ -54,7 +56,26 @@
   .bottom {
     height: calc(100% - var(--band-top-height));
     background-color: slategray;
-  }
+    
+    .left, .right {
+      height: 100%;
+    }
+
+    .left {
+      width: 65%;
+      overflow-y: auto;
+    }
+
+    .right {
+      width: 35%;
+    }
+
+    .album-col {
+      height: 200px;
+    }
+}
+
+  
 
 
 }
@@ -86,4 +107,12 @@
 .bottom-nav {
   align-items: center;
   padding: 0 10px;
+}
+
+.container {
+  flex-wrap: wrap;
+  
+  .album-col {
+    width: calc(100% / 4);
+  }
 }
