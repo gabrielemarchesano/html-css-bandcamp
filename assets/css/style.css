@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  --band-top-height: 112px;
+}
+
 .debug {
   border: 1px dashed;
+
+  .top {
+    height: var(--band-top-height);
+    background-color: steelblue;
+  }
+
+  .bottom {
+    height: calc(100% - var(--band-top-height));
+    background-color: slategray;
+  }
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
 }
