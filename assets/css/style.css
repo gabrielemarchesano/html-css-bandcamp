@@ -145,3 +145,12 @@
     width: calc(100% / 4);
   }
 }
+
+.bottom {
+  background-color: var(--band-primary-black);
+  color: white;
+}
+
+.artwork {
+  width: 100%;
+}
