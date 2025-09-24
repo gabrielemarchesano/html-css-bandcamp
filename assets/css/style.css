@@ -173,3 +173,41 @@ body {
 .artwork {
   width: 100%;
 }
+
+.player-card {
+  width: 90%;
+  margin: auto;
+}
+
+.player {
+  align-items: center;
+  margin: 20px 0;
+}
+
+.fa-circle-play {
+  font-size: 75px;
+}
+
+.player-btn {
+  a {
+    display: block;
+    width: 355px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+
+  #album {
+    background-color: white;
+  }
+
+  #wishlist {
+    color: white;
+  }
+
+
+}
