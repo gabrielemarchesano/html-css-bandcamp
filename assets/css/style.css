@@ -14,15 +14,66 @@
   .top {
     height: var(--band-top-height);
     background-color: steelblue;
+
+    .nav {
+      background-color: blueviolet;
+      width: 100%;
+      height: calc(100% / 2);
+    }
+
+    .logo {
+      background-color: aliceblue;
+      width: 150px;
+      height: 40px;
+    }
+
+    .src-bar {
+      background-color: aliceblue;
+      height: 40px;
+      width: 200px;
+    }
+
+    .btn {
+      background-color: aliceblue;
+      height: 40px;
+      width: 100px;
+    }
+
+    .filter {
+      background-color: aliceblue;
+      height: 40px;
+      width: 300px;
+    }
   }
 
   .bottom {
     height: calc(100% - var(--band-top-height));
     background-color: slategray;
   }
+
+
+}
+
+.d-flex {
+  display: flex;
 }
 
 .wrapper {
   height: 100vh;
   overflow: hidden;
+}
+
+.nav {
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.nav-left {
+  align-items: center;
+  gap: 10px;
+}
+
+.btns {
+  align-items: center;
+  gap: 10px;
 }
