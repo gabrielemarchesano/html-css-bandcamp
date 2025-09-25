@@ -280,9 +280,9 @@ body {
   border: 1px solid var(--band-primary-black);
 }
 
- .artwork:hover .img-icon {
+.card-top:hover .img-icon {
     display: block;
-  }
+}
 
 .player a:hover {
   color: rgba(255, 255, 255, 0.895);
