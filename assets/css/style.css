@@ -239,10 +239,11 @@ body {
 
 /* Effetti */
 
-.btns:hover .nav-btn{
+.sign-btn:hover , .access-btn:hover{
   background-color: rgba(255, 255, 255, 0.169);
   cursor: pointer;
   text-decoration: underline;
+  
 }
 
 .artwork:not(.player-card .artwork):hover {
