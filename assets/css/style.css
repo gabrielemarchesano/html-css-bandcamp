@@ -168,10 +168,12 @@ body {
 
 .right {
   width: 35%;
+  overflow-y: auto;
 }
 
 .artwork {
   width: 100%;
+  border: 1px solid grey;
 }
 
 .player-card {
@@ -188,7 +190,7 @@ body {
   font-size: 75px;
 }
 
-.player-btn {
+.player-btns {
   a {
     display: block;
     width: 355px;
@@ -208,6 +210,24 @@ body {
   #wishlist {
     color: white;
   }
+}
 
+.profile-info {
+  display: flex;
+  gap: 10px;
+}
 
+.song-info {
+  margin: 30px 0;
+}
+
+.pfp {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.follow-btn {
+  a {
+    color: white;
+  }
 }
