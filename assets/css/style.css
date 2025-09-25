@@ -133,20 +133,38 @@ body {
   color: white;
 }
 
-#search-bar {
-  width: 250px;
+.src-bar {
+  width: 300px;
   border-radius: 3px;
   border: none;
   padding: 5px;
   background-color: var(--band-search-bg);
+  color: grey;
 }
 
-#filter {
+#search-bar {
+  width: 90%;
+  background-color: var(--band-search-bg);
+  border: none;
+}
+
+.filter {
   background-color: var(--band-filter-bg);
-  width: 370px;
+  width: 415px;
   padding: 5px 15px;
   border-radius: 20px;
   border: 1px solid grey;
+  color: grey;
+}
+
+#filter {
+  width: 90%;
+  background-color: var(--band-filter-bg);
+  border: none;
+}
+
+.fa-magnifying-glass {
+  margin-right: 5px;
 }
 
 .container-flex {
@@ -192,8 +210,10 @@ body {
 }
 
 .img-icon {
+  display: none;
   position: absolute;
-  top: 88%;
+  top: 87%;
+  left: 2%;
 }
 
 .artwork {
@@ -260,10 +280,13 @@ body {
   border: 1px solid var(--band-primary-black);
 }
 
+ .artwork:hover .img-icon {
+    display: block;
+  }
+
 .player a:hover {
   color: rgba(255, 255, 255, 0.895);
 }
-
 
 #album:hover, #wishlist:hover {
   background-color: rgba(255, 255, 255, 0.169);
