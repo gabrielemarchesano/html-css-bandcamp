@@ -331,20 +331,22 @@ body {
   }
 
   .btns i {
-    display: contents;
+    display: flex;
+    align-items: center;
   }
 
   .src-bar {
     display: none;
   }
 
-  .filter , #filter {
+  .filter {
     width: 100%;
+    margin: auto;
   }
 
   #filter {
-    padding: 10px;
-    font-size: 15px;
+    padding: 3px 0;
+    font-size: 13px;
   }
   
   .right {
