@@ -127,6 +127,11 @@ body {
   background-color: var(--band-secondary-black);
 }
 
+.btns i {
+  display: none;
+  color: white;
+}
+
 #search-bar {
   width: 250px;
   border-radius: 3px;
@@ -168,7 +173,7 @@ body {
 
 .right {
   width: 35%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .artwork {
@@ -188,12 +193,13 @@ body {
 
 .fa-circle-play {
   font-size: 75px;
+  margin-right: 20px;
 }
 
 .player-btns {
   a {
     display: block;
-    width: 355px;
+    width: auto;
     text-decoration: none;
     color: black;
     border: 1px solid;
@@ -212,22 +218,66 @@ body {
   }
 }
 
-.profile-info {
-  display: flex;
-  gap: 10px;
+.profile {
+  display: none;
 }
 
-.song-info {
-  margin: 30px 0;
+/* Responsive */
+
+@media screen and (max-width: 744px){
+  .left .album-col {
+    width: calc(100% / 2);
+    padding: 10px;
+  }
+
+  .profile {
+    display: contents;
+    
+    .profile-info {
+      gap: 10px;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    .song-info {
+      margin: 30px 0;
+    }
+
+    .pfp {
+      border-radius: 50%;
+      width: 20%;
+    }
+
+    .follow-btn {
+      a {
+        color: white;
+      }
+    }
+  }
 }
 
-.pfp {
-  border-radius: 50%;
-  width: 20%;
-}
+@media screen and (max-width: 600px) {
+  .logo img {
+    content: url(../img/logo-mobile.jpeg);
+  }
 
-.follow-btn {
-  a {
-    color: white;
+  .btns i {
+    display: contents;
+  }
+
+  .src-bar {
+    display: none;
+  }
+
+  .filter , #filter {
+    width: 100%;
+  }
+  
+  .right {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
   }
 }
