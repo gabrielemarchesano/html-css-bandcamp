@@ -272,6 +272,11 @@ body {
   .filter , #filter {
     width: 100%;
   }
+
+  #filter {
+    padding: 10px;
+    font-size: 15px;
+  }
   
   .right {
     display: none;
