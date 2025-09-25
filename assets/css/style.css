@@ -173,7 +173,8 @@ body {
 
 .right {
   width: 35%;
-  /* overflow-y: auto; */
+  overflow-y: auto;
+  margin-bottom: 20px;
 }
 
 .artwork {
