@@ -199,6 +199,11 @@ body {
 .player {
   align-items: center;
   margin: 20px 0;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .fa-circle-play {
@@ -232,6 +237,26 @@ body {
   display: none;
 }
 
+/* Effetti */
+
+.btns:hover .nav-btn{
+  background-color: rgba(255, 255, 255, 0.169);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.artwork:not(.player-card .artwork):hover {
+  border: 1px solid var(--band-primary-black);
+}
+
+.player a:hover {
+  color: rgba(255, 255, 255, 0.895);
+}
+
+
+#album:hover, #wishlist:hover {
+  background-color: rgba(255, 255, 255, 0.169);
+}
 /* Responsive */
 
 @media screen and (max-width: 744px){
